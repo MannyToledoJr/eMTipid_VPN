@@ -11,7 +11,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-public class OpenVPNStats extends OpenVPNClientBase {
+public class OpenVPNStats extends mt_mainbase {
     private static final String TAG = "OpenVPNClientStats";
     private StatsAdapter adapter;
     private GridView gridview;

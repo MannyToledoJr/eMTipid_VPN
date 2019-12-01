@@ -235,7 +235,7 @@ public abstract class mt_mainbase extends Activity implements EventReceiver {
         if (profile_name != null) {
             prefs.delete_key("autostart_profile_name");
             if (prefs.get_boolean("autostart", false)) {
-                Intent intent = new Intent(context, OpenVPNClient.class).addFlags(276824064).putExtra("net.openvpn.openvpn.AUTOSTART_PROFILE_NAME", profile_name);
+                Intent intent = new Intent(context, mt_main.class).addFlags(276824064).putExtra("net.openvpn.openvpn.AUTOSTART_PROFILE_NAME", profile_name);
                 context.startActivity(intent);
                 Log.d(TAG, "CLIBASE: autostart profile='" + profile_name + "' intent=" + intent.toString());
             }

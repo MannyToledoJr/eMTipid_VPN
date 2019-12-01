@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import net.openvpn.openvpn.ProxyList.Item;
 
-public class OpenVPNAddProxy extends OpenVPNClientBase implements OnClickListener, OnEditorActionListener {
+public class OpenVPNAddProxy extends mt_mainbase implements OnClickListener, OnEditorActionListener {
     private static final String TAG = "OpenVPNAddProxy";
     CheckBox allow_cleartext_auth_checkbox;
     Button cancel_button;

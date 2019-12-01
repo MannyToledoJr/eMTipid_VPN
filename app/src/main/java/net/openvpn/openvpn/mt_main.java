@@ -517,7 +517,7 @@ public class mt_main extends mt_mainbase implements OnRequestPermissionsResultCa
         if (is_active()) {
             ConnectionStats stats = get_connection_stats();
             this.last_pkt_recv_view.setText(render_last_pkt_recv(stats.last_packet_received));
-            this.duration_view.setText(OpenVPNClientBase.render_duration(stats.duration));
+            this.duration_view.setText(mt_mainbase.render_duration(stats.duration));
             this.bytes_in_view.setText(render_bandwidth(stats.bytes_in));
             this.bytes_out_view.setText(render_bandwidth(stats.bytes_out));
         }

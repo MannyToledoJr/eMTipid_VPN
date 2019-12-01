@@ -58,8 +58,8 @@ public class FileDialog extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setResult(MODE_CREATE, getIntent());
-        if (OpenVPNClientBase.themeSet) {
-            setTheme(OpenVPNClientBase.themeResId);
+        if (mt_mainbase.themeSet) {
+            setTheme(mt_mainbase.themeResId);
         }
         setContentView(R.layout.file_dialog_main);
         this.myPath = (TextView) findViewById(R.id.fdPath);

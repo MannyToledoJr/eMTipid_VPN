@@ -20,7 +20,7 @@ import java.util.Set;
 import net.openvpn.openvpn.HttpsClient.AuthContext;
 import net.openvpn.openvpn.HttpsClient.CancelDetect.I;
 
-public class OpenVPNImportProfile extends OpenVPNClientBase implements OnClickListener, OnEditorActionListener, I {
+public class OpenVPNImportProfile extends mt_mainbase implements OnClickListener, OnEditorActionListener, I {
     private static final String TAG = "OpenVPNImportProfile";
     private int generation;
     private PrefUtil prefs;

@@ -6,7 +6,7 @@ import android.util.Log;
 import android.widget.TextView;
 import java.io.IOException;
 
-public class OpenVPNAbout extends OpenVPNClientBase {
+public class OpenVPNAbout extends mt_mainbase {
     private static final String TAG = "OpenVPNAbout";
 
 	private Object expire_string;
@@ -24,8 +24,8 @@ public class OpenVPNAbout extends OpenVPNClientBase {
             Log.e(TAG, "cannot obtain version info", e);
         }
         get_text_view(R.id.about_text).setText(String.format(resString(R.string.about_text), new Object[]{versionName, Integer.valueOf(versionCode)}));
-        get_text_view(R.id.core_text).setText(OpenVPNClientBase.get_openvpn_core_platform());
-        if (OpenVPNClientBase.get_app_expire_string() != null) {
+        get_text_view(R.id.core_text).setText(mt_mainbase.get_openvpn_core_platform());
+        if (mt_mainbase.get_app_expire_string() != null) {
             get_text_view(R.id.about_beta_expire_warn).setText(String.format(resString(R.string.beta_expire_warn), new Object[]{expire_string}));
         } else {
             findViewById(R.id.about_expire_group).setVisibility(8);

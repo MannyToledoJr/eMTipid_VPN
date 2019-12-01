@@ -14,7 +14,7 @@ import java.io.IOException;
 import net.openvpn.openvpn.FileUtil.FileTooLarge;
 import net.openvpn.openvpn.OpenVPNService.MergedProfile;
 
-public class OpenVPNAttachmentReceiver extends OpenVPNClientBase implements OnClickListener {
+public class OpenVPNAttachmentReceiver extends mt_mainbase implements OnClickListener {
     private static final String TAG = "OpenVPNAttachmentReceiver";
     private Button accept_button;
     private Button cancel_button;
@@ -102,7 +102,7 @@ public class OpenVPNAttachmentReceiver extends OpenVPNClientBase implements OnCl
     }
 
     private void launch_main_page() {
-        Intent i = new Intent(this, OpenVPNClient.class);
+        Intent i = new Intent(this, mt_main.class);
         i.addFlags(67108864);
         try {
             startActivity(i);

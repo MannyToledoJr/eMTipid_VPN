@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import net.openvpn.openvpn.OpenVPNService.LogMsg;
 
-public class OpenVPNLog extends OpenVPNClientBase implements OnClickListener {
+public class OpenVPNLog extends mt_mainbase implements OnClickListener {
     private static final String TAG = "OpenVPNClientLog";
     private Button mPause;
     private Button mResume;

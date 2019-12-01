@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import net.openvpn.openvpn.OpenVPNService.ProfileList;
 
-public class OpenVPNAddShortcut extends OpenVPNClientBase implements OnClickListener, OnItemSelectedListener, OnEditorActionListener {
+public class OpenVPNAddShortcut extends mt_mainbase implements OnClickListener, OnItemSelectedListener, OnEditorActionListener {
     private static final String TAG = "OpenVPNAddShortcut";
     private Button cancel_button;
     private Button create_button;

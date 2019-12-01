@@ -8,6 +8,6 @@ public class OpenVPNRebootReceiver extends BroadcastReceiver {
     private static final String TAG = "OpenVPNRebootReceiver";
 
     public void onReceive(Context context, Intent intent) {
-        OpenVPNClientBase.autostart(context);
+        mt_mainbase.autostart(context);
     }
 }

@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-public class OpenVPNProxyCreds extends OpenVPNClientBase implements OnClickListener, OnEditorActionListener {
+public class OpenVPNProxyCreds extends mt_mainbase implements OnClickListener, OnEditorActionListener {
     private static final String TAG = "OpenVPNProxyCreds";
     Button cancel_button;
     Button ok_button;

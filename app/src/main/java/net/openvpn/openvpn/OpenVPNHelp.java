@@ -6,7 +6,7 @@ import android.webkit.WebView;
 import java.io.IOException;
 import java.util.Locale;
 
-public class OpenVPNHelp extends OpenVPNClientBase {
+public class OpenVPNHelp extends mt_mainbase {
     private static final String TAG = "OpenVPNHelp";
 
     public void onCreate(Bundle savedInstanceState) {

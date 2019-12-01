@@ -3,7 +3,7 @@ package net.openvpn.openvpn;
 import android.os.Bundle;
 import android.util.Log;
 
-public class OpenVPNDisconnect extends OpenVPNClientBase {
+public class OpenVPNDisconnect extends mt_mainbase {
     private static final String TAG = "OpenVPNDisconnect";
 
     public void onCreate(Bundle savedInstanceState) {
