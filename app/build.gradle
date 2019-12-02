@@ -20,6 +20,9 @@ android {
 }
 
 dependencies {
+	compile 'com.github.javiersantos:AppUpdater:2.7'
+	compile 'com.android.support:design:+'
+	compile 'com.android.support:appcompat-v7:+'
 	compile 'com.android.support:support-v4:+'
 	compile 'com.android.support:support-annotations:+'
 	compile 'com.android.support:support-compat:+'

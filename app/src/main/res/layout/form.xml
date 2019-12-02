@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+
+	<ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/main_scroll_view"
 	android:layout_width="fill_parent"
@@ -220,11 +221,13 @@
 			style="@style/group">
 
 			<Button
+				android:layout_gravity="center"
 				android:id="@+id/connect"
 				android:text="@string/connect"
 				style="@style/button"/>
 
 			<Button
+				android:layout_gravity="center"
 				android:id="@+id/disconnect"
 				android:text="@string/disconnect"
 				style="@style/button"/>

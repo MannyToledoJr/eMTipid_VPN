@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<style name="AppTheme" parent="Theme.AppCompat">
+		<item name="colorPrimary">@color/blue</item>
+		<item name="colorPrimaryDark">@color/white</item>
+		<item name="colorAccent">@color/red</item>
+	</style>
 <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
 <style name="TextAppearance.Compat.Notification.Info" parent="@style/TextAppearance.Compat.Notification"><item name="android:textSize">12.0sp</item><item name="android:textColor">?android:textColorSecondary</item></style>
 <style name="TextAppearance.Compat.Notification.Time" parent="@style/TextAppearance.Compat.Notification"><item name="android:textSize">12.0sp</item><item name="android:textColor">?android:textColorSecondary</item></style>

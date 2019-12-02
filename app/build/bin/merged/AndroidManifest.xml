@@ -27,7 +27,7 @@
         android:allowBackup="false"
         android:icon="@drawable/icon"
         android:label="@string/app"
-        android:theme="@android:style/Theme.Holo.Light" >
+        android:theme="@style/AppTheme" >
         <service
             android:name="net.openvpn.openvpn.OpenVPNService"
             android:permission="android.permission.BIND_VPN_SERVICE" >

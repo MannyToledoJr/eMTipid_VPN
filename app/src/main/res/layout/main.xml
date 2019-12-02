@@ -1,7 +1,72 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#C0E5FB">
 
-    
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:layout_margin="10dp"
+		android:id="@+id/profile"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="DISCONNECTED"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_gravity="center"
+		android:id="@+id/status"/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:inputType="textMultiLine"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dp"
+		android:hint="USERNAME"
+		android:id="@+id/username"
+		android:gravity="center"/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:inputType="textPassword"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:layout_gravity="center"
+		android:hint="PASSWORD"
+		android:id="@+id/password"
+		android:gravity="center"/>
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:id="@+id/password_save"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_margin="10dp">
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="CONNECT"
+			android:id="@+id/connect"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="DISCONNECT"
+			android:id="@+id/disconnect"/>
+
+	</LinearLayout>
+
 </LinearLayout>
+
+

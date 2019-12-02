@@ -46,6 +46,8 @@ import net.openvpn.openvpn.OpenVPNService.ConnectionStats;
 import net.openvpn.openvpn.OpenVPNService.EventMsg;
 import net.openvpn.openvpn.OpenVPNService.Profile;
 import net.openvpn.openvpn.OpenVPNService.ProfileList;
+import com.github.javiersantos.appupdater.*;
+import com.github.javiersantos.appupdater.enums.*;
 
 public class mt_main extends mt_mainbase implements OnRequestPermissionsResultCallback, OnClickListener, OnTouchListener, OnItemSelectedListener, OnEditorActionListener {
     private static final int REQUEST_IMPORT_PKCS12 = 3;
@@ -158,6 +160,21 @@ public class mt_main extends mt_mainbase implements OnRequestPermissionsResultCa
             setCurrentTheme(16973934);
         }
         setContentView(R.layout.form);
+		
+		//welcome Update
+		
+		AppUpdater appUpdater = new AppUpdater(this);
+		appUpdater.setDisplay(Display.DIALOG);
+		appUpdater.setTitleOnUpdateAvailable("Update available");
+		appUpdater.setUpdateFrom(UpdateFrom.JSON);
+		appUpdater.setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.json");
+		appUpdater.setContentOnUpdateAvailable("Check out the latest version available of my app!");
+		appUpdater.setTitleOnUpdateNotAvailable("Update not available");
+		appUpdater.setContentOnUpdateNotAvailable("No update available. Check for updates again later!");
+		appUpdater.setButtonUpdate("Update now?");
+		
+		appUpdater.start();
+		
         load_ui_elements();
         doBindService();
         warn_app_expiration(this.prefs);
