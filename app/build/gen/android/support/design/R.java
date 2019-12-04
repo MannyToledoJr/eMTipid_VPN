@@ -3186,6 +3186,9 @@ containing a value of this type.
     public static final class menu {
         public static final int menu=0x7f0d0000;
     }
+    public static final class raw {
+        public static final int update=0x7f100000;
+    }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f050120;
         public static final int abc_action_bar_home_description_format=0x7f050121;

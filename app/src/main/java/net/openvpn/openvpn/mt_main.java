@@ -167,7 +167,7 @@ public class mt_main extends mt_mainbase implements OnRequestPermissionsResultCa
 		appUpdater.setDisplay(Display.DIALOG);
 		appUpdater.setTitleOnUpdateAvailable("Update available");
 		appUpdater.setUpdateFrom(UpdateFrom.JSON);
-		appUpdater.setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.json");
+		appUpdater.setUpdateJSON("https://raw.githubusercontent.com/MannyToledoJr/eMTipid_VPN/master/app/src/main/res/raw/update-changelog.json");
 		appUpdater.setContentOnUpdateAvailable("Check out the latest version available of my app!");
 		appUpdater.setTitleOnUpdateNotAvailable("Update not available");
 		appUpdater.setContentOnUpdateNotAvailable("No update available. Check for updates again later!");
